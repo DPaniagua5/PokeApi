@@ -1,0 +1,35 @@
+.container .card{
+    background: #ff0000;
+    width: 350px;
+    height: 550px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 5px 7px #f0a0a0;
+}
+
+.container .card img{
+    background: #ffffff;
+    width: 200px;
+    height: 200px;
+}    
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    flex-wrap: wrap;
+    padding-left: 7.5%;
+    padding-top: 20px;
+    display: flex;
+    box-sizing: border-box; 
+}

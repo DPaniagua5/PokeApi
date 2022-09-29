@@ -1,0 +1,101 @@
+body{
+    background: url("https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png");
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.container .card{
+    background: #BBBBB9;
+    width: 350px;
+    height: 550px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 5px 7px #FFFF00;
+}
+
+.container .card img{
+    background: #ffffff;
+    width: 200px;
+    height: 200px;
+}    
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    flex-wrap: wrap;
+    padding-left: 7.5%;
+    padding-top: 20px;
+    display: flex;
+    box-sizing: border-box; 
+}
+
+.Filtro {
+    flex-wrap: wrap;
+    display: flex;
+    height: 300px;
+    background: #ffffff;
+    padding: 10px 30px;
+    border-radius: 20px;
+    
+}
+
+.Filtro label{
+    padding: 10px;
+    display: block;
+    font-size: 22px;
+}
+.Filtro input {
+    width: 250px;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+
+  .Filtro input[type="text"] {
+    border-bottom: 1px solid;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #000000;
+    font-size: 16px;
+  }
+  .Filtro button {
+    padding: 10 0 40px;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 150px;
+    background: #ff0000;
+    color: #000;
+    font-size: 22px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin:5px;
+  }
+
+  .Filtro button:hover {
+    cursor: pointer;
+    background: #ee3131;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .Filtro .Opciones select{
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+  }
+

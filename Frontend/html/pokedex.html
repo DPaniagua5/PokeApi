@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Pokemones</title>
+    <link rel = "stylesheet" href = "../CSS/Pstyle.css">
+</head>
+<body>
+    <div class = "Filtro" > 
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id = "Nombre" placeholder="Ingrese el nombre del Pokemon">
+            <label for="Numero">Numero:</label>
+            <input type="text" id = "Numero" placeholder="Ingrese el número del Pokemon">
+            <form class = "Opciones">
+                <label for="Tipo">Tipo:</label>
+                <select id = "Tipo" name = "Tipo">
+                <option id = "Fuego" value = "Fuego">Fuego</option>
+                <option id = "Agua" value = "Agua">Agua</option>
+                <option id = "Hierva" value = "Hierva">Hierva</option>
+                </Select>
+            </form>
+
+            <button onClick="FNombre()"> Por nombre </button> 
+            <button onClick="FNumero()"> Por numero </button>
+            <button onClick="FTipo()"> Por tipo </button>
+            <button id="refresh"> Todos </button>
+        </div>
+       
+    <div class = "content" id = "app">  </div>
+
+    <script src = "../JS/Pokedex.JS"   type = "text/javascript"></script>
+    <script src = "../JS/Filtro.JS"   type = "text/javascript"></script>
+    <script>
+        let refresh = document.getElementById('refresh');
+    refresh.addEventListener('click', _ => {
+            location.reload();
+})
+    </script>
+</body>
+</html>

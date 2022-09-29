@@ -1,0 +1,55 @@
+body{
+    background: url("https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png");
+    font-family: sans-serif;
+}
+.container .card{
+    background: #000000;
+    width: 350px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px #91a2eb;
+}
+
+.container .card img{
+    width: 150px;
+    height: 250px;
+    background: #ffffff;
+    padding-top: 10px;
+}    
+
+.container .card h4{
+    color: #ffffff;
+}
+.container .card h5{
+    color: #ffffff;
+}
+
+.content {
+    flex-wrap: wrap;
+    padding-left: 15%;
+    padding-top: 20px;
+    display: flex;
+    box-sizing: border-box; 
+}
+
+.titulo {
+    height: 300px;
+    background: #91a2eb;
+    background-size: cover;
+    display: flex;
+    border-radius: 8px;
+}
+
+.titulo h1{
+    margin: auto auto;
+    font-size: 50px;
+}
